@@ -29,6 +29,7 @@ namespace Proxet.Tournament
                     playerInfo.WaitTimeSec = Int32.Parse(line[1]);
                     playerInfo.VehicleClass = Convert.ToInt32(line[2]);
                     players.Add(playerInfo);
+                    
                 }
             }
             var sortedUsers = players.OrderByDescending(u => u.WaitTimeSec);
